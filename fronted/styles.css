@@ -1,0 +1,153 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background Setup */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for contrast */
+    padding: 40px;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Container Setup */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFEB3B; /* Bright Yellow */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Form Section */
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+.upload-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-form input[type="file"],
+.upload-form input[type="text"] {
+    padding: 15px;
+    margin: 15px 0;
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #FFEB3B; /* Yellow border */
+    border-radius: 10px;
+    font-size: 1.1rem;
+    background-color: #333; /* Dark background */
+    color: #fff;
+}
+
+.upload-form input[type="file"]:focus,
+.upload-form input[type="text"]:focus {
+    outline: none;
+    border-color: #FFEB3B; /* Yellow focus border */
+}
+
+.upload-form button {
+    padding: 12px 30px;
+    background-color: #FFEB3B; /* Bright Yellow */
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+}
+
+.upload-form button:hover {
+    background-color: #FFC107; /* Darker Yellow Hover Effect */
+}
+
+/* Result Section */
+.result-container {
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.result-container h2 {
+    color: #FFEB3B; /* Bright Yellow */
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.result-container h3 {
+    color: #FFC107; /* Darker Yellow */
+    font-size: 1.5rem;
+}
+
+.result-container h4 {
+    color: #FFD700; /* Gold for Suggestions */
+    font-size: 1.3rem;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Loading Text */
+.loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #FFEB3B;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .upload-form input[type="file"],
+    .upload-form input[type="text"],
+    .upload-form button {
+        max-width: 100%;
+    }
+
+    .result-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}

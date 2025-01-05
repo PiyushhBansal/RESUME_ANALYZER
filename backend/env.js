@@ -1,0 +1,5 @@
+const OPEN_API_KEY = "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";
+
+module.exports={
+    OPEN_API_KEY
+}

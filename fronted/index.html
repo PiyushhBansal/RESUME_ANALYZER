@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Resume Analyzer</h1>
+        </header>
+
+        <section class="form-section">
+            <form id="uploadForm" class="upload-form">
+                <input type="file" id="resume-file" name="resumeFile" accept=".pdf,.docx,.txt" required>
+                <input type="text" id="job-description" placeholder="Enter Job Description" required>
+                <button type="button" onclick="upload(event)" class="btn">Upload Resume</button>
+            </form>
+        </section>
+
+        <section id="result-container" class="result-container">
+            <h2>Parsed Resume Details</h2>
+            <div id="resume-details"></div>
+            <h3>Matching Score</h3>
+            <p id="matching-score"></p>
+            <h4>Suggestions for Improvement</h4>
+            <p id="suggestions"></p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
